@@ -1,0 +1,4 @@
+_target_: common.datasets.trec19document.TREC2019Doc
+data_dir: ???
+batch_size: 16
+num_workers: 16

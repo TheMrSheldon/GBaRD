@@ -1,0 +1,27 @@
+defaults:
+  - _self_
+  - datamodule: h5
+  - ranker: proposition
+
+
+seed: 12345
+# used_gpus=null to not modify CUDA_DEVICE_ORDER and CUDA_VISIBLE_DEVICES. used_gpus=[] such that there are not visible
+# gpus, and otherwise, e.g., used_gpus=[0, 2] such that only cuda:0 and cuda:2 are visible to the application.
+used_gpus: null
+checkpoint: ???
+run_name: ???
+checkpoint_path: "checkpoints/${run_name}"
+result_path: "results/{datamodule}/${run_name}/k=${topk};${checkpoint}.tsv"
+topk: ???
+
+cache_root: "cache"
+model_cache: "colbert_{precision}"
+processor_cache: "graphs_{precision}"
+
+trainer:
+  _target_: pytorch_lightning.Trainer
+  accelerator: gpu
+  devices: 1
+  deterministic: True
+  precision: 16
+  default_root_dir: null

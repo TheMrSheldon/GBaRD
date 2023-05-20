@@ -1,0 +1,47 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Effective and Efficient Ranking using a Dual Encoder
+  Approach
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: thesis
+authors:
+  - given-names: Tim
+    family-names: Hagen
+repository-code: >-
+  https://github.com/TheMrSheldon/Effective-and-Efficient-Ranking-using-a-Dual-Encoder-Approach
+abstract: >-
+  Ever since BERT's inception, the Information Retrieval
+  community has worked on harnessing BERT's potential for
+  relevance ranking. To this end, the most prevalent
+  approaches are distilling BERT into smaller transformer
+  architectures or designing efficient ranking architectures
+  around (distilled versions of) BERT. We propose replacing
+  MMSE-ColBERT's document encoder by distilling it into a
+  vastly smaller, graph-based architecture using a modified
+  version of TinyBERT's loss objective. Our architecture
+  creates an initial graph-of-word that is then refined
+  using multiple heads of Graph Structure Learning.
+  Empirically, we find that the smallest variant of our
+  architecture works best. It consists of a single GAT-layer
+  and three GCN-layers. The modified version of TinyBERT's
+  loss objective is competitive with strong baselines, like
+  MMSE-ColBERT, but does not beat them. By using Margin-MSE
+  loss instead, we can further significantly improve
+  effectiveness such that our model beats every baseline
+  except the strongest, MMSE-ColBERT with query expansion.
+  Due to its simplicity, our model is three times as fast as
+  MMSE-ColBERT's document encoding. Our experiments show
+  promise that our model can further be used for document
+  encoding and to replace the query encoding of MMSE-ColBERT
+  as well for more efficient ranking.
+keywords:
+  - BERT
+  - re-ranking
+  - cross-architecture knowledge distillation
+  - graph neural networks
+license: GPL-3.0

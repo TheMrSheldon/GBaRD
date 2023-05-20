@@ -1,0 +1,11 @@
+_target_: ranking_utils.model.data.h5.H5DataModule
+data_dir: ???
+fold_name: ???
+batch_size: 16
+num_workers: 16
+
+# The following values are supported (or would be... if they were loaded as enums):
+#    POINTWISE
+#    PAIRWISE
+#    CONTRASTIVE
+#training_mode: 0
