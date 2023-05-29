@@ -49,18 +49,18 @@ of our final architecture (i.e., only one attention head and no jumping knowledg
 To install either run
 
 ```
-pip install "GBaRD @ git+https://github.com/TheMrSheldon/GBaRD"
+pip install "GBaRD @ git+https://github.com/TheMrSheldon/GBaRD#v1.0.0"
 ```
 or add
 
 ```
-GBaRD @ git+https://github.com/TheMrSheldon/GBaRD
+GBaRD @ git+https://github.com/TheMrSheldon/GBaRD#v1.0.0
 ```
 to your `requirements.txt`.
 
 ## Usage
 To run these examples, `cd` into the `examples` folder and install `GBaRD` as described above. You will additionally
-need pre-trained weights, which you can get by extracting [gbard-ws3_1x1x2-mmse-8mask.zip](https://github.com/TheMrSheldon/GBaRD/releases/download/test/gbard-ws3_1x1x2-mmse-8mask.zip)
+need pre-trained weights, which you can get by extracting [gbard-ws3_1x1x2-mmse-8mask.zip](https://github.com/TheMrSheldon/GBaRD/releases/download/v1.0.0/gbard-ws3_1x1x2-mmse-8mask.zip)
 in a new `examples/pretrained` folder.
 
 Inference on GBaRD is as easy as loading the pre-trained model and calling it on the input. The call-signature is as follows:
