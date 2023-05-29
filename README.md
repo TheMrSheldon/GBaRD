@@ -26,9 +26,9 @@
 		Passage, we find that the smallest variant of our architecture works best. That is, with only a single GAT-layer
 		and three GCN-layers, GBaRD outperforms and is competitive with the biggest of our baselines, which have seven
 		times the parameter count. Due to its simplicity, GBaRD is three times as fast as state-of-the-art BERT-based
-		dual encoders and produces only 67% as much carbon emissions. Our zero-shot experiments on TREC DL 2019 Document
-		show great promise that GBaRD can further be employed for document encoding and that the same graph-based
-		architecture may be used to replace the query encoding of MMSE-ColBERT as well for even more efficient ranking.
+		dual encoders and produces 67% less carbon emissions. Our zero-shot experiments on TREC DL 2019 Document show great
+    promise that GBaRD can further be employed for document ranking and that the same graph-based architecture may be
+    used to replace the query encoding of MMSE-ColBERT as well for even more efficient ranking.
 	</p>
 </center>
 <br/>
